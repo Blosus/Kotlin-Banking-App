@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+// Se realizo la app lol
 class MainActivity : AppCompatActivity()
 {
     private lateinit var txtSaludo: EditText
@@ -58,7 +59,7 @@ class MainActivity : AppCompatActivity()
             }
             else
             {
-                strNombre=" Hola "+ txtSaludo.text.toString() + " Como estas?"
+                strNombre=" Hola "+ txtSaludo.text.toString() + "¿Como estas?"
                 txtSaludo.setText(strNombre)
             }
         })
@@ -67,6 +68,7 @@ class MainActivity : AppCompatActivity()
         {
             txtSaludo.setText("")
         })
+
 
         btnCerrar.setOnClickListener(View.OnClickListener {
             val builder = AlertDialog.Builder(this)
