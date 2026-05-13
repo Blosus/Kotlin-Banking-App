@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appHolaMundo</string>
+    <string name="strtitulo">Primer aplicacion movil</string>
+    <string name="strtunombre">¿Cual es tu nombre?</string>
+    <string name="strpulsar">Dar click</string>
+    <string name="strlimpiar">Limpiar</string>
+    <string name="strcerrar">Cerrar</string>
+</resources>
