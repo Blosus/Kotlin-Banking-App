@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity()
             }
             else
             {
-                strNombre=" Hola "+ txtSaludo.text.toString() + "¿Como estas?"
+                strNombre=" Hola "+ txtSaludo.text.toString() + ", ¿Como estas?"
                 txtSaludo.setText(strNombre)
             }
         })
