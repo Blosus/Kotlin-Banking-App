@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
     <color name="blue">#182AA2</color>
     <color name="red">#D10E0E</color>
     <color name="yellow">#CDE40A</color>
@@ -9,4 +10,7 @@
     <color name="grey">#D5CAB9B9</color>
     <color name="l_pink">#FFD1DF</color>
     <color name="l_red">#FFD1DF</color>
+    <color name="titulo">#3f51b5</color>
+    <color name="subtitulo">#767474</color>
+    <color name="aceptar">#ff4881</color>
 </resources>

@@ -5,4 +5,16 @@
     <string name="strpulsar">Dar click</string>
     <string name="strlimpiar">Limpiar</string>
     <string name="strcerrar">Cerrar</string>
+    <string name="nameCompany">Servicios Informaticos</string>
+    <string name="materia">Programacion Movil</string>
+    <string name="alumno">Rui Manuel Veloso Ramirez</string>
+    <string name="matricula">2023030490</string>
+    <string name="hola">Hola</string>
+    <string name="imc">Calculo IMC</string>
+    <string name="gradCon">Grados</string>
+    <string name="cotizar">Cotizacion</string>
+    <string name="spinner">Spinner</string>
+    <string name="dineroConv">Monedas</string>
+    <string name="preExamen1">Pre examen 1</string>
+    <string name="preExamen2">Pre examen 2</string>
 </resources>

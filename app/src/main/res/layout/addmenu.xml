@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".AddMenu">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="10sp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/titulo" android:paddingBottom="10sp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alumno" android:textColor="@color/white" android:textSize="20sp" android:paddingLeft="10sp" android:paddingTop="10sp" android:id="@+id/lblNombre"> </TextView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/matricula" android:textColor="@color/white" android:textSize="15sp" android:paddingLeft="10sp" android:paddingTop="5sp" android:layout_below="@+id/lblNombre" android:id="@+id/lblMatricula"> </TextView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/materia" android:textColor="@color/white" android:textSize="15sp" android:paddingLeft="10sp" android:paddingTop="5sp" android:layout_below="@+id/lblMatricula" android:id="@+id/lblMateria"> </TextView>
+            <ImageView android:layout_width="80dp" android:layout_height="80dp" android:layout_alignParentRight="true" android:layout_marginRight="11sp" android:layout_marginTop="11sp" android:src="@mipmap/yo"> </ImageView>
+        </RelativeLayout>
+        <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:rowCount="4" android:alignmentMode="alignMargins" android:columnOrderPreserved="false">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardHola">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/hola"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/hola"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardIMC">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/imc"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/imc"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardGrados">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/conversion"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/gradCon"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardDivisa">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/moneda"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/dineroConv"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardToyota">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/cotizacion"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/cotizar"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardSpinner">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/spinner"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/spinner"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardPreEx1">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/pre1"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/preExamen1"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1" app:cardElevation="6sp" app:cardCornerRadius="12sp" android:layout_margin="12dp" android:id="@+id/cardPreEx2">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="16sp">
+                    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/pre2"> </ImageView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginBottom="10sp" android:textColor="@color/aceptar" android:text="@string/preExamen2"> </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
