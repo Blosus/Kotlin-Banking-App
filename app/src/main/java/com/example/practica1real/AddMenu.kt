@@ -45,5 +45,10 @@ class AddMenu : AppCompatActivity()
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        cardIMC.setOnClickListener {
+            val intent = Intent(this, appImc::class.java)
+            startActivity(intent)
+        }
     }
 }

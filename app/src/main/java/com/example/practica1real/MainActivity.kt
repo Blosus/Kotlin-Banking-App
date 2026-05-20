@@ -70,21 +70,6 @@ class MainActivity : AppCompatActivity()
         })
 
 
-        btnCerrar.setOnClickListener(View.OnClickListener {
-            val builder = AlertDialog.Builder(this)
-                builder.setTitle("App Hola")
-                builder.setMessage("¿Deseas cerrar la aplicacion?")
-                builder.setPositiveButton("Aceptar"){
-                    Dialog , which -> finish()
-                }
-                builder.setNegativeButton("Cancelar"){
-                    Dialog , which ->
-                    Toast.makeText(applicationContext, "Continuamos en la app",
-                        Toast.LENGTH_SHORT).show()
-                }
-                builder.show()
-        })
-
     }
 
 

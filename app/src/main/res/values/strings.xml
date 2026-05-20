@@ -17,4 +17,9 @@
     <string name="dineroConv">Monedas</string>
     <string name="preExamen1">Pre examen 1</string>
     <string name="preExamen2">Pre examen 2</string>
+    <string name="strCalcular">Calcular</string>
+    <string name="strAltura">Altura (Ej. 1.80)</string>
+    <string name="strPeso">Peso (Ej. 90.5 kg)</string>
+    <string name="strResultado">Su resultado aqui:</string>
+    <string name="strImc">Calculo IMC</string>
 </resources>
