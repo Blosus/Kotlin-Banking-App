@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -21,6 +22,7 @@ class appImc : AppCompatActivity() {
     private lateinit var txtAltura: EditText
     private lateinit var txtPeso: EditText
     private lateinit var txtResultado: TextView
+    private lateinit var imgPeso: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,26 +44,40 @@ class appImc : AppCompatActivity() {
         txtAltura=findViewById<EditText>(R.id.txtAltura);
         txtPeso=findViewById<EditText>(R.id.txtPeso);
         txtResultado=findViewById<TextView>(R.id.txtResultado);
+        imgPeso=findViewById<ImageView>(R.id.image)
     }
 
     fun eventosClick(){
         btnCalcular.setOnClickListener {
-            if(txtAltura.text.toString().contentEquals("") || txtPeso.text.toString().contentEquals(""))
-            {
-                Toast.makeText(applicationContext,"Falto capturar la altura o el peso", Toast.LENGTH_SHORT).show()
-            } else {
-                var altura: Float = txtAltura.text.toString().toFloat()
-                var peso: Float = txtPeso.text.toString().toFloat()
-                var imc : Float = 0.0f
-                imc = peso / (altura * altura)
-                txtResultado.text = imc.toString();
+            if (txtAltura.text.toString().contentEquals("") ||
+                txtPeso.text.toString().contentEquals("") ||
+                txtPeso.text.toString().toFloat() <= 0 ||
+                txtAltura.text.toString().toFloat() <= 0
+            ) {
+                Toast.makeText(
+                    applicationContext,
+                    "Falto capturar la altura o el peso",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
             }
-        }
+            var altura: Float = txtAltura.text.toString().toFloat()
+            var peso: Float = txtPeso.text.toString().toFloat()
+            var imc: Float = 0.0f
+            imc = peso / (altura * altura)
+            txtResultado.text = imc.toString();
 
-        btnLimpiar.setOnClickListener {
-            txtAltura.setText("")
-            txtPeso.setText("")
-            txtResultado.setText("")
+            if (imc < 18.5) imgPeso.setImageResource(R.mipmap.bajopeso)
+            if (imc >= 18.5 && imc < 24.9) imgPeso.setImageResource(R.mipmap.pesonormal)
+            if (imc >= 25 && imc < 29.9) imgPeso.setImageResource(R.mipmap.sobrepeso)
+            if (imc >= 30) imgPeso.setImageResource(R.mipmap.obesidad)
+
+        }
+                btnLimpiar.setOnClickListener {
+                    imgPeso.setImageResource(R.mipmap.categorias)
+                    txtAltura.setText("")
+                    txtPeso.setText("")
+                    txtResultado.setText("")
         }
 
         btnCerrar.setOnClickListener(View.OnClickListener {
@@ -78,6 +94,7 @@ class appImc : AppCompatActivity() {
             }
             builder.show()
         })
+
 
     }
 }

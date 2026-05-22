@@ -15,8 +15,10 @@
     <string name="cotizar">Cotizacion</string>
     <string name="spinner">Spinner</string>
     <string name="dineroConv">Monedas</string>
-    <string name="preExamen1">Pre examen 1</string>
-    <string name="preExamen2">Pre examen 2</string>
+    <string name="preExamen1">PreExamen1</string>
+    <string name="preExamen2">PreExamen2</string>
+    <string name="Salir">Salir</string>
+    <string name="Examen1">Examen1</string>
     <string name="strCalcular">Calcular</string>
     <string name="strAltura">Altura (Ej. 1.80)</string>
     <string name="strPeso">Peso (Ej. 90.5 kg)</string>

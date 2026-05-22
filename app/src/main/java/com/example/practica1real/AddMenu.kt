@@ -2,7 +2,10 @@ package com.example.practica1real
 
     import android.content.Intent
     import android.os.Bundle
+    import android.view.View
+    import android.widget.Toast
     import androidx.activity.enableEdgeToEdge
+    import androidx.appcompat.app.AlertDialog
     import androidx.appcompat.app.AppCompatActivity
     import androidx.cardview.widget.CardView
     import androidx.core.view.ViewCompat
@@ -16,6 +19,7 @@ class AddMenu : AppCompatActivity()
     private lateinit var cardGrados: CardView
     private lateinit var cardCotizar: CardView
     private lateinit var cardSpinner: CardView
+    private lateinit var cardSalir: CardView
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -38,6 +42,7 @@ class AddMenu : AppCompatActivity()
         cardGrados=findViewById<CardView>(R.id.cardGrados)
         cardSpinner=findViewById<CardView>(R.id.cardSpinner)
         cardCotizar=findViewById<CardView>(R.id.cardToyota)
+        cardSalir=findViewById<CardView>(R.id.cardSalir)
     }
     fun evenClick()
     {
@@ -49,6 +54,21 @@ class AddMenu : AppCompatActivity()
         cardIMC.setOnClickListener {
             val intent = Intent(this, appImc::class.java)
             startActivity(intent)
+        }
+
+        cardSalir.setOnClickListener {
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("AppMenu")
+                builder.setMessage("¿Deseas cerrar la aplicacion?")
+                builder.setPositiveButton("Aceptar"){
+                        Dialog , which -> finish()
+                }
+                builder.setNegativeButton("Cancelar"){
+                        Dialog , which ->
+                    Toast.makeText(applicationContext, "Continuamos en la app",
+                        Toast.LENGTH_SHORT).show()
+                }
+                builder.show()
         }
     }
 }
