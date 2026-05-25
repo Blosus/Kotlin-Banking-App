@@ -24,4 +24,10 @@
     <string name="strPeso">Peso (Ej. 90.5 kg)</string>
     <string name="strResultado">Su resultado aqui:</string>
     <string name="strImc">Calculo IMC</string>
+    <string name="strCel">Celcius a Fahrenheit</string>
+    <string name="strFah">Fahrenheit a Celcius</string>
+    <string name="strGrados">Grados</string>
+    <string name="strCantidad">Cantidad</string>
+    <string name="strMensaje">Falto capturar cantidad</string>
+
 </resources>
