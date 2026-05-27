@@ -61,6 +61,16 @@ class AddMenu : AppCompatActivity()
             startActivity(intent)
         }
 
+        cardGrados.setOnClickListener {
+            val intent = Intent(this, appGrados::class.java)
+            startActivity(intent)
+        }
+
+        cardMoneda.setOnClickListener {
+            val intent = Intent(this, appMonedas::class.java)
+            startActivity(intent)
+        }
+
         cardSalir.setOnClickListener {
                 val builder = AlertDialog.Builder(this)
                 builder.setTitle("AppMenu")

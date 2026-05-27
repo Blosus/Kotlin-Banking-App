@@ -29,5 +29,20 @@
     <string name="strGrados">Grados</string>
     <string name="strCantidad">Cantidad</string>
     <string name="strMensaje">Falto capturar cantidad</string>
+    <string-array name="monedas">
+        <item>Dolar Americano</item>
+        <item>Dolar Canadiense</item>
+        <item>Euro</item>
+        <item>Libras Esterlinas</item>
+    </string-array>
+    <string name="dolarA">17.40</string>
+    <string name="dolarC">18.50</string>
+    <string name="euro">21.45</string>
+    <string name="libra">22,18</string>
+    <string name="strTituloMon">Convertidor de Monedas</string>
+    <string name="strCantidasP">Cantidad de Pesos</string>
+    <string name="strBtnConvertir">Convertir</string>
+    <string name="strconMonedas">Convertir monedas</string>
+
 
 </resources>
