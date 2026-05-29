@@ -74,10 +74,10 @@ class appOperaciones : AppCompatActivity() {
         }
 
         btnCalcular.setOnClickListener {
-            if (txtNumero1.text.toString().contentEquals("") ||
-                txtNumero1.text.toString().contentEquals("") ||
-                txtNumero2.text.toString().toFloat() == 0.0f ||
-                txtNumero2.text.toString().toFloat() == 0.0f ) {
+            val num1 = txtNumero1.text.toString().toFloatOrNull()
+            val num2 = txtNumero2.text.toString().toFloatOrNull()
+
+            if (num1 == null || num2 == null) {
                 Toast.makeText(this, R.string.strMensaje2, Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }

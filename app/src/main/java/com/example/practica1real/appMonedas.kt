@@ -90,7 +90,7 @@ class appMonedas : AppCompatActivity() {
                 else -> 0.0f
             }
 
-            txtResultado.text = resultado.toString()
+            txtResultado.text = String.format("%.2f", resultado)
         }
 
 
