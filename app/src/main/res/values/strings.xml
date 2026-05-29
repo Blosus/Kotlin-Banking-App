@@ -30,6 +30,7 @@
     <string name="strGrados">Grados</string>
     <string name="strCantidad">Cantidad</string>
     <string name="strMensaje">Falto capturar cantidad</string>
+    <string name="strMensaje2">Falto capturar cantidad o es igual a 0</string>
     <string-array name="monedas">
         <item>Dolar Americano</item>
         <item>Dolar Canadiense</item>

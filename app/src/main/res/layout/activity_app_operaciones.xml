@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/numero1"
             android:textSize="20sp"
-            android:inputType="numberDecimal"
+            android:inputType="numberDecimal|numberSigned"
             android:padding="10sp"
             android:id="@+id/txtNumero1">
         </EditText>
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/numero2"
             android:textSize="20sp"
-            android:inputType="numberDecimal"
+            android:inputType="numberDecimal|numberSigned"
             android:padding="10sp"
             android:id="@+id/txtNumero2">
         </EditText>

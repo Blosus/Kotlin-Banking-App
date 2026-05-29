@@ -20,6 +20,7 @@ class AddMenu : AppCompatActivity()
     private lateinit var cardCotizar: CardView
     private lateinit var cardSpinner: CardView
     private lateinit var cardSalir: CardView
+    private lateinit var cardPreExamen1 : CardView
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -43,6 +44,7 @@ class AddMenu : AppCompatActivity()
         cardSpinner=findViewById<CardView>(R.id.cardSpinner)
         cardCotizar=findViewById<CardView>(R.id.cardToyota)
         cardSalir=findViewById<CardView>(R.id.cardSalir)
+        cardPreExamen1 = findViewById<CardView>(R.id.cardPreEx1)
     }
     fun evenClick()
     {
@@ -68,6 +70,11 @@ class AddMenu : AppCompatActivity()
 
         cardMoneda.setOnClickListener {
             val intent = Intent(this, appMonedas::class.java)
+            startActivity(intent)
+        }
+
+        cardPreExamen1.setOnClickListener {
+            val intent = Intent(this, appOperaciones::class.java)
             startActivity(intent)
         }
 
