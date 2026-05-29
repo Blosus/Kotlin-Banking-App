@@ -76,10 +76,10 @@ class appMonedas : AppCompatActivity() {
                 Toast.makeText(this, R.string.strMensaje, Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            var dolarA : Float = R.string.dolarA.toString().toFloat()
-            var dolarC : Float = R.string.dolarC.toString().toFloat()
-            var euro : Float = R.string.euro.toString().toFloat()
-            var libra : Float = R.string.libra.toString().toFloat()
+            var dolarA : Float = getString(R.string.dolarA).toFloat()
+            var dolarC : Float = getString(R.string.dolarC).toFloat()
+            var euro : Float = getString(R.string.euro).toFloat()
+            var libra : Float = getString(R.string.libra).toFloat()
             var cantMx : Float = txtCantidad.text.toString().toFloat()
 
             val resultado = when(pos){

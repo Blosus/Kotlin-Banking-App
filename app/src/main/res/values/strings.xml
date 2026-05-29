@@ -38,11 +38,20 @@
     <string name="dolarA">17.40</string>
     <string name="dolarC">18.50</string>
     <string name="euro">21.45</string>
-    <string name="libra">22,18</string>
+    <string name="libra">22.18</string>
     <string name="strTituloMon">Convertidor de Monedas</string>
     <string name="strCantidasP">Cantidad de Pesos</string>
     <string name="strBtnConvertir">Convertir</string>
     <string name="strconMonedas">Convertir monedas</string>
+    <string name="strOperaciones">Operaciones basicas</string>
+    <string name="numero1">Numero 1</string>
+    <string name="numero2">Numero 2</string>
+    <string-array name="operaciones">
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicacion</item>
+        <item>Division</item>
+    </string-array>
 
 
 </resources>
