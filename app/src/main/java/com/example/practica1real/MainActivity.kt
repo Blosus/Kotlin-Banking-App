@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity()
             }
             builder.setNegativeButton("Cancelar"){
                     Dialog , which ->
-                Toast.makeText(applicationContext, "Continuamos en la app",
+                Toast.makeText(applicationContext, "Continuamos en la app!",
                     Toast.LENGTH_SHORT).show()
             }
             builder.show()
