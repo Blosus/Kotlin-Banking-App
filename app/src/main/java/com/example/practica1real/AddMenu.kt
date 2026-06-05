@@ -17,9 +17,9 @@ class AddMenu : AppCompatActivity()
     private lateinit var cardIMC: CardView
     private lateinit var cardMoneda: CardView
     private lateinit var cardGrados: CardView
-    private lateinit var cardCotizar: CardView
     private lateinit var cardSpinner: CardView
     private lateinit var cardSalir: CardView
+    private lateinit var cardCotizacion: CardView
     private lateinit var cardPreExamen1 : CardView
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -42,7 +42,7 @@ class AddMenu : AppCompatActivity()
         cardMoneda=findViewById<CardView>(R.id.cardDivisa)
         cardGrados=findViewById<CardView>(R.id.cardGrados)
         cardSpinner=findViewById<CardView>(R.id.cardSpinner)
-        cardCotizar=findViewById<CardView>(R.id.cardToyota)
+        cardCotizacion=findViewById<CardView>(R.id.cardToyota)
         cardSalir=findViewById<CardView>(R.id.cardSalir)
         cardPreExamen1 = findViewById<CardView>(R.id.cardPreEx1)
     }
@@ -63,11 +63,6 @@ class AddMenu : AppCompatActivity()
             startActivity(intent)
         }
 
-        cardGrados.setOnClickListener {
-            val intent = Intent(this, appGrados::class.java)
-            startActivity(intent)
-        }
-
         cardMoneda.setOnClickListener {
             val intent = Intent(this, appMonedas::class.java)
             startActivity(intent)
@@ -77,6 +72,12 @@ class AddMenu : AppCompatActivity()
             val intent = Intent(this, appOperaciones::class.java)
             startActivity(intent)
         }
+
+        cardCotizacion.setOnClickListener {
+            val intent = Intent(this, ClienteActivity::class.java)
+            startActivity(intent)
+        }
+
 
         cardSalir.setOnClickListener {
                 val builder = AlertDialog.Builder(this)

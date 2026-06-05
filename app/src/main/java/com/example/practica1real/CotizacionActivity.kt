@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Toast
-import kotlin.math.abs
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 
 class CotizacionActivity : AppCompatActivity() {
     private lateinit var txtCliente: TextView
@@ -66,8 +66,8 @@ class CotizacionActivity : AppCompatActivity() {
         var strCliente: String = intent.getStringExtra("cliente").toString()
         txtCliente.text = strCliente
 
-        var folio: Int = abs(Cotizacion().generarFolio())
-        txtFolio.text = "Folio : " + folio.toString()
+        var folio: Int = Cotizacion().generarFolio()
+        txtFolio.text = "Folio: " + folio.toString()
     }
 
     fun eventosClick(){
@@ -85,9 +85,6 @@ class CotizacionActivity : AppCompatActivity() {
 
             } else {
 
-                // generar un folio
-                txtFolio.text = cotizacion.generarFolio().toString()
-
                 cotizacion.descripcion = txtDescripcion.text.toString()
                 cotizacion.precio = txtPrecio.text.toString().toFloat()
                 cotizacion.porPagInicial = txtPorPagI.text.toString().toFloat()
@@ -100,20 +97,19 @@ class CotizacionActivity : AppCompatActivity() {
 
                 // calculos
                 txtPagoInicial.text =
-                    "Pago Inicial " + ": " + cotizacion.calcularPagoInicial().toString() + ":"
+                    "Pago Inicial" + ": " + cotizacion.calcularPagoInicial().toString()
 
                 txtTotalFin.text =
-                    "Total a Financiar " + ": " + cotizacion.calcularTotalFin().toString()
+                    "Total a Financiar" + ": " + cotizacion.calcularTotalFin().toString()
 
                 txtPagoMensual.text =
-                    "Pago Mensual " + ": " + cotizacion.calcularPagoMensual().toString()
+                    "Pago Mensual" + ": " + cotizacion.calcularPagoMensual().toString()
             }
         })
 
         btnLimpiar.setOnClickListener(View.OnClickListener {
 
             // limpiar TextView
-            txtFolio.text = ""
             txtPagoInicial.text = "Pago Inicial"
             txtTotalFin.text = "Total a Financiar"
             txtPagoMensual.text = "Pago Mensual"
@@ -129,7 +125,18 @@ class CotizacionActivity : AppCompatActivity() {
         })
 
         btnCerrar.setOnClickListener(View.OnClickListener {
-            finish()
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("CotizacionActivity")
+            builder.setMessage("¿Deseas cerrar la aplicacion?")
+            builder.setPositiveButton("Aceptar"){
+                    Dialog , which -> finish()
+            }
+            builder.setNegativeButton("Cancelar"){
+                    Dialog , which ->
+                Toast.makeText(applicationContext, "Continuamos en la app!",
+                    Toast.LENGTH_SHORT).show()
+            }
+            builder.show()
         })
     }
 }

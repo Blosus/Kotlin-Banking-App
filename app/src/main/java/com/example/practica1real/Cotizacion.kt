@@ -27,6 +27,6 @@ class Cotizacion:Serializable {
         return this.calcularTotalFin()/this.plazos
     }
     public fun generarFolio() :Int {
-        return Random(333).nextInt()%1001
+        return Random.nextInt(1000, 9999)
     }
 }
