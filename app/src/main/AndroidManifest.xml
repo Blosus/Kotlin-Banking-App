@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica1real">
         <activity
+            android:name=".ClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cotizacion"
+            android:exported="false" />
+        <activity
+            android:name=".CotizacionActivity"
+            android:exported="false" />
+        <activity
             android:name=".appOperaciones"
             android:exported="false" />
         <activity
