@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculoNomina">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strEncabezado"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:text="@string/strNoRecibo"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblNumRecibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strNombreDisplay"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/lblNombre"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/strHrTrabajadas"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="10sp"
+            android:inputType="numberDecimal"
+            android:id="@+id/txtHorasNormal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/strHrExtra"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="10sp"
+            android:inputType="numberDecimal"
+            android:id="@+id/txtHorasExtra"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strPuesto"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingBottom="10sp"
+            android:paddingTop="5sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:id="@+id/rdgPuesto"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strAuxiliar"
+                    android:checked="true"
+                    android:id="@+id/rdbAuxiliar"
+                    android:padding="5sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strAlbanil"
+                    android:id="@+id/rdbAlabanil"
+                    android:padding="5sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strIngObra"
+                    android:id="@+id/rdbIngObra"
+                    android:padding="5sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strNominaSubotal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:id="@+id/lblSubtotal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strNominaImpuesto"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:id="@+id/lblImpuesto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strNominaTotal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:id="@+id/lblTotal"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strCalcular"
+            android:id="@+id/btnCalcular"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strlimpiar"
+            android:id="@+id/btnLimpiar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strcerrar"
+            android:id="@+id/btnRegresar"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -67,6 +67,19 @@
     <string name="pmensual">Pago Mensual</string>
     <string name="pinicial">Pago Inicial</string>
     <string name="tfin">Total a Financiar</string>
-
-
+    <string name="hint_nombreTrabajador">Ingrese el nombre del trabajador</string>
+    <string name="strNombreTrab">Nombre del Trabajadir</string>
+    <string name="strEncabezado">Calculo de Pago de Nomina</string>
+    <string name="strEntrar">Entrar</string>
+    <string name="strNoRecibo"> Numero de recibo: </string>
+    <string name="strNombreDisplay"> Nombre: </string>
+    <string name="strHrTrabajadas"> Horas trabajadas: </string>
+    <string name="strHrExtra"> Horas extra: </string>
+    <string name="strPuesto"> Puesto: </string>
+    <string name="strAuxiliar"> Auxiliar </string>
+    <string name="strAlbanil"> Albañil </string>
+    <string name="strIngObra"> Ing. Obra </string>
+    <string name="strNominaSubotal"> Subtotal: </string>
+    <string name="strNominaImpuesto"> Impuesto: </string>
+    <string name="strNominaTotal"> Total a Pagar: </string>
 </resources>
