@@ -127,12 +127,13 @@
             android:textStyle="bold"
             android:paddingTop="10sp"
             android:paddingBottom="10sp" />
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Escribe la cantidad"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/red"
+            android:inputType="numberDecimal"
             android:id="@+id/txtCantidad"/>
 
         <Space

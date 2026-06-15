@@ -66,7 +66,7 @@ class appBanco : AppCompatActivity() {
         val passwordCorrecto = getString(R.string.pass)
 
         if (usuario == usuarioCorrecto && password == passwordCorrecto) {
-            val intent = Intent(this, CuentaBanco::class.java)
+            val intent = Intent(this, BancoActivity::class.java)
             intent.putExtra("usuario", usuario)
             startActivity(intent)
         } else {
