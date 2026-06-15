@@ -85,7 +85,7 @@ class calculoNomina : AppCompatActivity() {
     }
 
     private fun Calcular(){
-        if(txtHorasNormal.text.isEmpty() || txtHorasExtra.text.isEmpty() ){
+        if(txtHorasNormal.text.isEmpty() || txtHorasExtra.text.isEmpty()){
             makeText(applicationContext , "Falta Ingresar Datos", Toast.LENGTH_SHORT).show()
             return
         }
@@ -95,6 +95,10 @@ class calculoNomina : AppCompatActivity() {
         }
         if(txtHorasNormal.text.toString().any { it.isLetter() }|| txtHorasNormal.text.toString().toIntOrNull() == null){
             makeText(applicationContext , "Horas Trabajadas no es un dato numerico entero", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if(txtHorasExtra.text.toString().toFloat() <= 0 || txtHorasExtra.text.toString().toFloat() <= 0 ){
+            makeText(applicationContext , "Los numeros deben ser mayores a 0", Toast.LENGTH_SHORT).show()
             return
         }
 

@@ -79,8 +79,8 @@ class CotizacionActivity : AppCompatActivity() {
 
             // validar
             if (txtDescripcion.text.toString().contentEquals("") ||
-                txtPrecio.text.toString().contentEquals("") ||
-                txtPorPagI.text.toString().contentEquals("")) {
+                txtPrecio.text.toString().contentEquals("" ) ||  ( txtPrecio.text.toString().toFloat() <= 0 )||
+                txtPorPagI.text.toString().contentEquals("") ||  ( txtPorPagI.text.toString().toFloat() <= 0 )) {
                 Toast.makeText(this, "Falto capturar algun dato", Toast.LENGTH_SHORT).show()
 
             } else {
