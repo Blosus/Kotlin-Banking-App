@@ -29,7 +29,7 @@
             android:textSize="15sp"
             android:paddingTop="15sp"
             android:paddingBottom="10sp"
-            android:inputType="text"
+            android:inputType="number"
             android:id="@+id/txtNumeroCuenta"/>
 
         <EditText
@@ -62,7 +62,7 @@
             android:textSize="15sp"
             android:paddingTop="15sp"
             android:paddingBottom="10sp"
-            android:inputType="text"
+            android:inputType="numberDecimal"
             android:id="@+id/txtSaldo"/>
 
         <TextView

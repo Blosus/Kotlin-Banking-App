@@ -94,6 +94,11 @@ class BancoActivity : AppCompatActivity() {
     private fun aplicarMovimiento() {
         val movimientoSeleccionado = rdgMovimientos.checkedRadioButtonId
 
+        if (movimientoSeleccionado == R.id.rdbConsSaldo) {
+            txtSaldo.setText(cuenta.obtenerSaldo().toString())
+            return
+        }
+
         val cantidadTexto = txtCantidad.text.toString().trim()
         if (cantidadTexto.isEmpty()) {
             Toast.makeText(this, "Debes capturar la cantidad", Toast.LENGTH_SHORT).show()
@@ -110,13 +115,11 @@ class BancoActivity : AppCompatActivity() {
         when (movimientoSeleccionado) {
             R.id.rdbDeposito -> {
                 cuenta.hacerDeposito(cantidad)
-                txtSaldo.setText(cuenta.obtenerSaldo().toString())
                 Toast.makeText(this, "Deposito realizado", Toast.LENGTH_SHORT).show()
             }
             R.id.rdbRetiro -> {
                 val exito = cuenta.retirarDinero(cantidad)
                 if (exito) {
-                    txtSaldo.setText(cuenta.obtenerSaldo().toString())
                     Toast.makeText(this, "Retiro realizado", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this, "Saldo insuficiente para realizar el retiro", Toast.LENGTH_SHORT).show()
