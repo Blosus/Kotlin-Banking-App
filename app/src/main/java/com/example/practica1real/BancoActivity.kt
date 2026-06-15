@@ -111,7 +111,7 @@ class BancoActivity : AppCompatActivity() {
             R.id.rdbDeposito -> {
                 cuenta.hacerDeposito(cantidad)
                 txtSaldo.setText(cuenta.obtenerSaldo().toString())
-                Toast.makeText(this, "Depósito realizado", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Deposito realizado", Toast.LENGTH_SHORT).show()
             }
             R.id.rdbRetiro -> {
                 val exito = cuenta.retirarDinero(cantidad)
