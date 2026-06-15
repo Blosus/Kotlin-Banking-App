@@ -22,6 +22,7 @@ class AddMenu : AppCompatActivity()
     private lateinit var cardCotizacion: CardView
     private lateinit var cardPreExamen1 : CardView
     private lateinit var cardPreExamen2 : CardView
+    private lateinit var cardExamen1: CardView
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -47,6 +48,7 @@ class AddMenu : AppCompatActivity()
         cardSalir=findViewById<CardView>(R.id.cardSalir)
         cardPreExamen1 = findViewById<CardView>(R.id.cardPreEx1)
         cardPreExamen2 = findViewById<CardView>(R.id.cardPreEx2)
+        cardExamen1 = findViewById<CardView>(R.id.cardExamen1)
     }
     fun evenClick()
     {
@@ -82,6 +84,11 @@ class AddMenu : AppCompatActivity()
 
         cardCotizacion.setOnClickListener {
             val intent = Intent(this, ClienteActivity::class.java)
+            startActivity(intent)
+        }
+
+        cardExamen1.setOnClickListener {
+            val intent = Intent(this, appBanco::class.java)
             startActivity(intent)
         }
 

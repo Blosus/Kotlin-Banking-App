@@ -11,9 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica1real">
         <activity
-            android:name=".CuentaBanco"
-            android:exported="false" />
-        <activity
             android:name=".BancoActivity"
             android:exported="false" />
         <activity
