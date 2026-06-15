@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica1real">
         <activity
+            android:name=".BancoActivity"
+            android:exported="false" />
+        <activity
             android:name=".appBanco"
             android:exported="false" />
         <activity
@@ -18,7 +21,7 @@
             android:exported="false" />
         <activity
             android:name=".calculoNomina"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".ClienteActivity"
             android:exported="false" />

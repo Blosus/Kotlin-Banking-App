@@ -82,4 +82,15 @@
     <string name="strNominaSubotal"> Subtotal: </string>
     <string name="strNominaImpuesto"> Impuesto: </string>
     <string name="strNominaTotal"> Total a Pagar: </string>
+
+    <string name="user">admin</string>
+    <string name="pass">1234</string>
+    <string name="banco">banorte</string>
+    <string name="strDomicilio">Av del Sol</string>
+    <array name="movimientos">
+        <item>Consultar</item>
+        <item>Retirar</item>
+        <item>Depositarr</item>
+    </array>
+
 </resources>

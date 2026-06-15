@@ -19,14 +19,14 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/banorte"
+            android:src="@mipmap/logobanco"
             android:layout_gravity="center"
             android:paddingBottom="20sp">
         </ImageView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cliente"
+            android:text="Usuario"
             android:textSize="20sp"
             android:textStyle="bold">
         </TextView>
@@ -36,7 +36,7 @@
             android:paddingBottom="20sp"
             android:textAlignment="center"
             android:inputType="text"
-            android:id="@+id/txtCliente"
+            android:id="@+id/txtUser"
             android:hint="Escribe el Nombre del cliente">
         </EditText>
         <TextView
@@ -52,7 +52,7 @@
             android:paddingBottom="20sp"
             android:textAlignment="center"
             android:inputType="text"
-            android:id="@+id/txtContraseña"
+            android:id="@+id/txtPassword"
             android:hint="Escribe la contraseña">
         </EditText>
 
