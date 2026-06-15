@@ -86,7 +86,7 @@
     <string name="user">admin</string>
     <string name="pass">1234</string>
     <string name="banco">banorte</string>
-    <string name="strDomicilio">Av del Sol</string>
+    <string name="strDomicilio">Av del Sol 34</string>
     <array name="movimientos">
         <item>Consultar</item>
         <item>Retirar</item>
